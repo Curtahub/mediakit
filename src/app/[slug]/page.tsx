@@ -76,7 +76,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           height={200}
         />
         <p className="text-[20px] font-semibold text-center mt-[40px]">
-          Ops, não encontramos esse influencer!
+          Ops, não encontramos esse influencer
         </p>
       </div>
     );
