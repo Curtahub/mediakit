@@ -16,31 +16,39 @@ import { ViewsChart } from "../ViewsChart/ViewsChart";
 export const AnalyticsYoutube = ({
   influencer,
   data,
+  error,
 }: {
   influencer: any;
   data: any;
+  error: boolean;
 }) => {
   return (
     <div className="flex flex-1 flex-col gap-[24px]">
-      <div className="flex flex-col md:flex-row gap-[24px]">
-        <div className="flex flex-col  gap-[24px]">
-          <Followers followers={data?.followersCount} />
-          <ViewsCount views={data?.viewsCount} />
-        </div>
-        <AgeRange demographyByAge={data?.demographyByAge} />
-        <Gender demographyByAge={data?.demographyByAge} />
-      </div>
+      {error ? (
+        <span className="text-center mt-10">Sem dados</span>
+      ) : (
+        <>
+          <div className="flex flex-col md:flex-row gap-[24px]">
+            <div className="flex flex-col  gap-[24px]">
+              <Followers followers={data?.followersCount} />
+              <ViewsCount views={data?.viewsCount} />
+            </div>
+            <AgeRange demographyByAge={data?.demographyByAge} />
+            <Gender demographyByAge={data?.demographyByAge} />
+          </div>
 
-      <div className="flex flex-col md:flex-row gap-[24px]">
-        <FollowersChart data={data?.followersChart} />
-        <ER data={data?.engagementRate} />
-      </div>
+          <div className="flex flex-col md:flex-row gap-[24px]">
+            <FollowersChart data={data?.followersChart} />
+            <ER data={data?.engagementRate} />
+          </div>
 
-      <div className="flex flex-col md:flex-row gap-[24px]">
-        <Countries countries={data?.audienceGeography?.countries} />
-        <ViewsChart data={data?.views} />
-        <Languages languages={data?.languages} />
-      </div>
+          <div className="flex flex-col md:flex-row gap-[24px]">
+            <Countries countries={data?.audienceGeography?.countries} />
+            <ViewsChart data={data?.views} />
+            <Languages languages={data?.languages} />
+          </div>
+        </>
+      )}
     </div>
   );
 };

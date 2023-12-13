@@ -19,11 +19,15 @@ export const Analytics = ({
   const [instagramData, setInstagramData] = useState<any>();
   const [tikTokData, setTikTokData] = useState<any>();
 
+  const [youtubeError, setYoutubeError] = useState<boolean>(false);
+  const [instagramError, setInstagramError] = useState<boolean>(false);
+  const [tikTokError, setTikTokError] = useState<boolean>(false);
+
   async function fetchYoutubeData(slug: string) {
     setLoading(true);
     const res = await fetch(`/api/influencer/${slug}/youtube`);
     if (!res.ok) {
-      throw new Error("Failed to fetch data");
+      setYoutubeError(true);
     }
     return res.json();
   }
@@ -32,7 +36,7 @@ export const Analytics = ({
     setLoading(true);
     const res = await fetch(`/api/influencer/${slug}/instagram`);
     if (!res.ok) {
-      throw new Error("Failed to fetch data");
+      setInstagramError(true);
     }
     return res.json();
   }
@@ -41,7 +45,7 @@ export const Analytics = ({
     setLoading(true);
     const res = await fetch(`/api/influencer/${slug}/tiktok`);
     if (!res.ok) {
-      throw new Error("Failed to fetch data");
+      setTikTokError(true);
     }
     return res.json();
   }
@@ -51,13 +55,29 @@ export const Analytics = ({
       case "summary":
         return <AnalyticsSummary influencer={influencer} data={summary} />;
       case "youtube":
-        return <AnalyticsYoutube influencer={influencer} data={youtubeData} />;
+        return (
+          <AnalyticsYoutube
+            influencer={influencer}
+            data={youtubeData}
+            error={youtubeError}
+          />
+        );
       case "instagram":
         return (
-          <AnalyticsInstagram influencer={influencer} data={instagramData} />
+          <AnalyticsInstagram
+            influencer={influencer}
+            data={instagramData}
+            error={instagramError}
+          />
         );
       case "tiktok":
-        return <AnalyticsTikTok influencer={influencer} data={tikTokData} />;
+        return (
+          <AnalyticsTikTok
+            influencer={influencer}
+            data={tikTokData}
+            error={tikTokError}
+          />
+        );
       default:
         return <p>Summary</p>;
     }
@@ -118,7 +138,7 @@ export const Analytics = ({
         />
       </div>
       {loading ? (
-        <div className="flex h-full justify-center items-center">
+        <div className="flex h-full justify-center items-center mt-10">
           <Loading />
         </div>
       ) : (

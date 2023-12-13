@@ -66,7 +66,7 @@ export const Impressions = ({ data }: { data: any }) => {
           </div>
           <div className="flex flex-col">
             <span className="text-[12px] text-white font-semibold uppercase">
-              Alcance de público
+              Alcance
             </span>
             <span className="text-[24px] text-white font-bold">
               {abbreviateNumber(data?.tiktok?.reach)}

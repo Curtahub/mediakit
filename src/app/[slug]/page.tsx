@@ -98,7 +98,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           </div>
           <Analytics influencer={influencer} summary={summary} />
         </div>
-        <div className="flex flex-1 flex-col justify-center items-center mb-8 gap-[12px]">
+        <div className="flex flex-1 flex-col justify-center items-center mb-8 gap-[12px] mt-12">
           <span className="text-[#101010] dark:text-[#D9D9D9] text-[12px] font-semibold">
             Powered by Curta Digital. Todos os direitos reservados.
           </span>

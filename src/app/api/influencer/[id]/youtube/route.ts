@@ -1,21 +1,12 @@
 import executeQuery from "@/lib/db";
-
-type Influencer = {
-  id: number;
-  name: string;
-  description: string;
-  instagram_username: string;
-  yt_username: string;
-  tiktok_username: string;
-  slug: string;
-  picture: string;
-};
+import { Influencer } from "../route";
+import { sub } from "date-fns";
 
 export async function GET(req: Request) {
   try {
     const slug = req.url.split("influencer/")[1].split("/")[0];
     const result = (await executeQuery({
-      query: "SELECT * FROM influenciadores_mkdigital WHERE slug = ?",
+      query: "SELECT * FROM influenciadores_mk_digital_att WHERE slug = ?",
       values: [slug],
     })) as Influencer[];
 
@@ -56,7 +47,7 @@ export async function GET(req: Request) {
       })
     );
 
-    const ageGenderData = data.result.report.features.audience_age_gender.data;
+    let ageGenderData = data.result.report.features.audience_age_gender.data;
     const demographyByAge = {
       male: 0,
       female: 0,
@@ -88,13 +79,15 @@ export async function GET(req: Request) {
     );
 
     const languages = { labels: [], values: [] } as any;
+    let ytLanguages = data?.result?.report?.features?.audience_languages?.data;
+    if (Object.keys(ytLanguages).length === 0) {
+      ytLanguages = [];
+    }
     await Promise.all(
-      data.result.report.features.audience_languages.data.map(
-        (language: any) => {
-          languages.labels.push(language.title.toUpperCase());
-          languages.values.push(language.prc);
-        }
-      )
+      ytLanguages.map((language: any) => {
+        languages.labels.push(language.title.toUpperCase());
+        languages.values.push(language.prc);
+      })
     );
 
     const views = { labels: [], values: [] } as any;
@@ -121,6 +114,6 @@ export async function GET(req: Request) {
       views,
     });
   } catch (error) {
-    return Response.json({ error: "Influencer not found" });
+    return Response.json({ error: "Error" }, { status: 404 });
   }
 }

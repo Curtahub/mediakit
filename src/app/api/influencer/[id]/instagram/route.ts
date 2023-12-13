@@ -1,21 +1,11 @@
 import executeQuery from "@/lib/db";
-
-type Influencer = {
-  id: number;
-  name: string;
-  description: string;
-  instagram_username: string;
-  yt_username: string;
-  tiktok_username: string;
-  slug: string;
-  picture: string;
-};
+import { Influencer } from "../route";
 
 export async function GET(req: Request) {
   try {
     const slug = req.url.split("influencer/")[1].split("/")[0];
     const result = (await executeQuery({
-      query: "SELECT * FROM influenciadores_mkdigital WHERE slug = ?",
+      query: "SELECT * FROM influenciadores_mk_digital_att WHERE slug = ?",
       values: [slug],
     })) as Influencer[];
 
@@ -186,6 +176,6 @@ export async function GET(req: Request) {
       audienceInterests,
     });
   } catch (error) {
-    return Response.json({ error: "Influencer not found" });
+    return Response.json({ error: "Error" }, { status: 404 });
   }
 }

@@ -63,8 +63,12 @@ export const AgeRange = ({ demographyByAge }: { demographyByAge: any }) => {
         Público alcançado
       </p>
       <p className="text-[16px] font-semibold uppercase">Faixa etária</p>
-      <div className="flex flex-1 items-center">
-        <Bar options={options} data={data} />
+      <div className="flex flex-1 items-center justify-center">
+        {demographyByAge?.values.length === 0 ? (
+          <p>No data</p>
+        ) : (
+          <Bar options={options} data={data} />
+        )}
       </div>
     </div>
   );

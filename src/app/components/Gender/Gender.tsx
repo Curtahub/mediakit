@@ -44,8 +44,12 @@ export const Gender = ({ demographyByAge }: { demographyByAge: any }) => {
         Mídia
       </p>
       <p className="text-[16px] font-semibold uppercase mb-[16px]">Gênero</p>
-      <div className="flex justify-center items-center h-[80%]">
-        <Pie data={pieData} />
+      <div className="flex items-center justify-center h-[80%]">
+        {demographyByAge?.male === 0 && demographyByAge?.female === 0 ? (
+          <p>No data</p>
+        ) : (
+          <Pie data={pieData} />
+        )}
       </div>
     </div>
   );

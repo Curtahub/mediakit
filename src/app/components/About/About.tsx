@@ -1,5 +1,5 @@
 type AboutProps = {
-  description: string;
+  description?: string;
 };
 
 export const About = ({ description }: AboutProps) => {
