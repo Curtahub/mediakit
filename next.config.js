@@ -23,7 +23,13 @@ const nextConfig = {
   },
   reactStrictMode: true,
   images: {
-    domains: ["localhost", "ibb.co", "i.ibb.co", "cdn.hypeauditor.com"],
+    domains: [
+      "localhost",
+      "ibb.co",
+      "i.ibb.co",
+      "cdn.hypeauditor.com",
+      "cdn.awsli.com.br",
+    ],
   },
 };
 

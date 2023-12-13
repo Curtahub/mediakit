@@ -31,12 +31,11 @@ export const Profile = ({ influencer }: ProfileProps) => {
     <div className="flex flex-col gap-[24px]">
       <div className="flex flex-1 flex-row p-[32px] bg-white dark:bg-[#1A1B1E] rounded-2xl items-center">
         <div className="w-[104px] h-[104px] rounded-full bg-[#f1f4fa] overflow-hidden mr-[24px]">
-          <ImageWithFallback
+          <Image
             src={influencer?.picture}
             alt="Influencer picture"
             width={104}
             height={104}
-            className="rounded-[10px]"
           />
         </div>
         <div className="flex flex-col">
