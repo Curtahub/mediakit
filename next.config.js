@@ -29,6 +29,8 @@ const nextConfig = {
       "i.ibb.co",
       "cdn.hypeauditor.com",
       "cdn.awsli.com.br",
+      "i.imgur.com",
+      "images2.imgbox.com",
     ],
   },
 };
