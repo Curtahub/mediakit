@@ -1,4 +1,3 @@
-import { TotalPosts } from "../TotalPosts/TotalPosts";
 import { Post } from "@/app/components/Post/Post";
 import { LastPost } from "../LastPost/LastPost";
 import { Followers } from "@/app/components/Followers/Followers";

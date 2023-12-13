@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ImageWithFallback from "../ImageWithFallback/ImageWithFallback";
 import { ThumbsUpIcon } from "@/app/icons/ThumbsUpIcon";
 import { useTheme } from "next-themes";
@@ -12,7 +11,7 @@ export const LastPost = ({ post }: any) => {
 
   return (
     <div className="flex flex-1 flex-col bg-white dark:bg-[#1A1B1E] rounded-2xl p-[32px] ">
-      <p className="text-[12px] font-medium uppercase text-[#F80000]">Post</p>
+      <p className="text-[12px] font-medium uppercase text-[#CE2039]">Post</p>
       <p className="text-[16px] font-semibold uppercase">Último post</p>
       <div className="flex flex-col md:flex-row gap-[32px] mt-[32px]">
         <div className="flex items-center justify-center">
@@ -32,7 +31,7 @@ export const LastPost = ({ post }: any) => {
                 <ThumbsUpIcon color={iconColor} width={16} height={16} />
                 <p className="text-[14px] font-normal">Curtidas</p>
               </div>
-              <p className="text-[14px] font-medium text-[#F80000]">
+              <p className="text-[14px] font-medium text-[#000] dark:text-[#FFF]">
                 {post.metrics.likes_count}
               </p>
             </div>
@@ -41,7 +40,7 @@ export const LastPost = ({ post }: any) => {
                 <CommentaryIcon color={iconColor} width={16} height={16} />
                 <p className="text-[14px] font-normal">Comentários</p>
               </div>
-              <p className="text-[14px] font-medium text-[#F80000]">
+              <p className="text-[14px] font-medium text-[#000] dark:text-[#FFF]">
                 {post.metrics.comments_count}
               </p>
             </div>
@@ -50,7 +49,7 @@ export const LastPost = ({ post }: any) => {
                 <BarChartIcon color={iconColor} width={16} height={16} />
                 <p className="text-[14px] font-normal">Visualizações</p>
               </div>
-              <p className="text-[14px] font-medium text-[#F80000]">
+              <p className="text-[14px] font-medium text-[#000] dark:text-[#FFF]">
                 {post.metrics.views_count}
               </p>
             </div>
@@ -60,7 +59,7 @@ export const LastPost = ({ post }: any) => {
                   <LineChartIcon color={iconColor} width={16} height={16} />
                   <p className="text-[14px] font-normal">Engajamento</p>
                 </div>
-                <p className="text-[14px] font-medium text-[#F80000]">
+                <p className="text-[14px] font-medium text-[#000] dark:text-[#FFF]">
                   {post.metrics.shares_count}
                 </p>
               </div>

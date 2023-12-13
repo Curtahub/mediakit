@@ -1,21 +1,10 @@
-import Image from "next/image";
-import { Followers } from "@/app/components/Followers/Followers";
-import { Following } from "../Following/Following";
 import { AgeRange } from "../AgeRange/AgeRange";
 import { Gender } from "../Gender/Gender";
-import { TotalPosts } from "../TotalPosts/TotalPosts";
 import { Countries } from "../Countries/Countries";
 import { Languages } from "../Languages/Languages";
 import { Summary } from "../Summary/Summary";
-import { Post } from "@/app/components/Post/Post";
 
-export const AnalyticsSummary = ({
-  influencer,
-  data,
-}: {
-  influencer: any;
-  data: any;
-}) => {
+export const AnalyticsSummary = ({ data }: { data: any }) => {
   return (
     <div className="flex flex-col gap-[24px]">
       <div className="flex flex-col md:flex-row gap-[24px]">

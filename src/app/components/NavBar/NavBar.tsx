@@ -9,10 +9,10 @@ import { useEffect } from "react";
 
 export const NavBar = () => {
   const liStyle =
-    "flex flex-row items-center mr-[40px] p-[10px] cursor-pointer rounded-2xl";
+    "flex flex-row items-center mr-[40px] p-[10px] cursor-pointer rounded-[48px]";
 
   const { theme, setTheme } = useTheme();
-  const iconColor = theme === "light" ? "black" : undefined;
+  const iconColor = theme === "light" ? "#101010" : undefined;
 
   useEffect(() => {
     if (localStorage.getItem("theme") === "dark") {
@@ -65,7 +65,7 @@ export const NavBar = () => {
         <ul className="flex flex-col md:flex-row mt-[20px] md:mt-0">
           <li
             className={`${liStyle} md:mr-4 ${
-              theme === "light" && "bg-[#E52440] text-white"
+              theme === "light" && "bg-[#CE2039] text-white"
             }`}
             onClick={() => {
               setTheme("light");
@@ -78,7 +78,7 @@ export const NavBar = () => {
           </li>
           <li
             className={`${liStyle} md:mr-0 ${
-              theme === "dark" && "bg-[#E52440]"
+              theme === "dark" && "bg-[#CE2039]"
             }`}
             onClick={() => {
               setTheme("dark");

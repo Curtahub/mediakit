@@ -1,24 +1,17 @@
-import { Post } from "@/app/components/Post/Post";
-import { LastPost } from "../LastPost/LastPost";
 import { Followers } from "@/app/components/Followers/Followers";
-import { Following } from "@/app/components/Following/Following";
 import { AgeRange } from "../AgeRange/AgeRange";
 import { Gender } from "../Gender/Gender";
-import { TotalNumbers } from "../TotalNumbers/TotalNumbers";
 import { ViewsCount } from "../ViewsCount/ViewsCount";
 import { FollowersChart } from "@/app/components/FollowersChart/FollowersChart";
 import { ER } from "@/app/components/ER/ER";
 import { Languages } from "@/app/components/Languages/Languages";
-import { Cities } from "@/app/components/Cities/Cities";
 import { Countries } from "@/app/components/Countries/Countries";
 import { ViewsChart } from "../ViewsChart/ViewsChart";
 
 export const AnalyticsYoutube = ({
-  influencer,
   data,
   error,
 }: {
-  influencer: any;
   data: any;
   error: boolean;
 }) => {

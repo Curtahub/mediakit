@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { abbreviateNumber } from "@/app/utils/utils";
 import { ThumbsUpIcon } from "@/app/icons/ThumbsUpIcon";
 import { useTheme } from "next-themes";
@@ -12,7 +11,7 @@ export const TotalNumbers = ({ data }: any) => {
 
   return (
     <div className="flex flex-1 flex-col bg-white dark:bg-[#1A1B1E] rounded-2xl p-[32px] ">
-      <p className="text-[12px] font-medium uppercase text-[#F80000]">
+      <p className="text-[12px] font-medium uppercase text-[#CE2039]">
         Por data de publicação
       </p>
       <p className="text-[16px] font-semibold uppercase">Números totais</p>
@@ -24,7 +23,7 @@ export const TotalNumbers = ({ data }: any) => {
                 <ThumbsUpIcon color={iconColor} width={16} height={16} />
                 <p className="text-[14px] font-normal">Curtidas</p>
               </div>
-              <p className="text-[14px] font-medium text-[#F80000]">
+              <p className="text-[14px] font-medium text-[#000] dark:text-[#FFF]">
                 {abbreviateNumber(data.likes.total)}
               </p>
             </div>
@@ -33,7 +32,7 @@ export const TotalNumbers = ({ data }: any) => {
                 <CommentaryIcon color={iconColor} width={16} height={16} />
                 <p className="text-[14px] font-normal">Comentários</p>
               </div>
-              <p className="text-[14px] font-medium text-[#F80000]">
+              <p className="text-[14px] font-medium text-[#000] dark:text-[#FFF]">
                 {abbreviateNumber(data.comments.total)}
               </p>
             </div>
@@ -42,7 +41,7 @@ export const TotalNumbers = ({ data }: any) => {
                 <BarChartIcon color={iconColor} width={16} height={16} />
                 <p className="text-[14px] font-normal">Compartilhamento</p>
               </div>
-              <p className="text-[14px] font-medium text-[#F80000]">
+              <p className="text-[14px] font-medium text-[#000] dark:text-[#FFF]">
                 {abbreviateNumber(data.shares.total)}
               </p>
             </div>
@@ -51,7 +50,7 @@ export const TotalNumbers = ({ data }: any) => {
                 <LineChartIcon color={iconColor} width={16} height={16} />
                 <p className="text-[14px] font-normal">Engajamento</p>
               </div>
-              <p className="text-[14px] font-medium text-[#F80000]">
+              <p className="text-[14px] font-medium text-[#000] dark:text-[#FFF]">
                 {abbreviateNumber(data.reachability.total)}
               </p>
             </div>

@@ -81,7 +81,7 @@ export const Post = ({ post, influencer }: { post: any; influencer: any }) => {
                 <VisibleIcon color={iconColor} width={10} height={10} />
                 <p className="text-[10px] font-normal">Views</p>
               </div>
-              <p className="text-[10px] font-medium text-[#F80000]">
+              <p className="text-[10px] font-medium text-[#000] dark:text-[#FFF]">
                 {abbreviateNumber(post?.metrics?.views)}
               </p>
             </div>
@@ -90,7 +90,7 @@ export const Post = ({ post, influencer }: { post: any; influencer: any }) => {
                 <CommentaryIcon color={iconColor} width={10} height={10} />
                 <p className="text-[10px] font-normal">Comentários</p>
               </div>
-              <p className="text-[10px] font-medium text-[#F80000]">
+              <p className="text-[10px] font-medium text-[#000] dark:text-[#FFF]">
                 {abbreviateNumber(post?.metrics?.comments)}
               </p>
             </div>
@@ -101,7 +101,7 @@ export const Post = ({ post, influencer }: { post: any; influencer: any }) => {
                 <ThumbsUpIcon color={iconColor} width={10} height={10} />
                 <p className="text-[10px] font-normal">Curtidas</p>
               </div>
-              <p className="text-[10px] font-medium text-[#F80000]">
+              <p className="text-[10px] font-medium text-[#000] dark:text-[#FFF]">
                 {abbreviateNumber(post?.metrics?.likes)}
               </p>
             </div>
@@ -111,7 +111,7 @@ export const Post = ({ post, influencer }: { post: any; influencer: any }) => {
                 <ShareIcon color={iconColor} width={10} height={10} />
                 <p className="text-[10px] font-normal">Comp.</p>
               </div>
-              <p className="text-[10px] font-medium text-[#F80000]">
+              <p className="text-[10px] font-medium text-[#000] dark:text-[#FFF]">
                 {abbreviateNumber(post?.metrics?.shares) || 0}
               </p>
             </div>

@@ -1,6 +1,5 @@
 import executeQuery from "@/lib/db";
 import { Influencer } from "../route";
-import { sub } from "date-fns";
 
 export async function GET(req: Request) {
   try {
@@ -47,7 +46,7 @@ export async function GET(req: Request) {
       })
     );
 
-    let ageGenderData = data.result.report.features.audience_age_gender.data;
+    const ageGenderData = data.result.report.features.audience_age_gender.data;
     const demographyByAge = {
       male: 0,
       female: 0,

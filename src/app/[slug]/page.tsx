@@ -9,7 +9,7 @@ import { About } from "../components/About/About";
 import { Impressions } from "../components/Impressions/Impressions";
 import { Analytics } from "../components/Analytics/Analytics";
 import { Loading } from "../components/Loading/Loading";
-import { ThemeProvider, useTheme } from "next-themes";
+import { ThemeProvider } from "next-themes";
 
 async function fetchInfluencer(slug: string) {
   const res = await fetch(`/api/influencer/${slug}`);
@@ -35,7 +35,6 @@ export default function Page({ params }: { params: { slug: string } }) {
 
   useEffect(() => {
     getData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function getData() {

@@ -1,6 +1,5 @@
 import executeQuery from "@/lib/db";
 import { Influencer } from "../route";
-import { de } from "date-fns/locale";
 
 export async function GET(req: Request) {
   try {

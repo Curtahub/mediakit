@@ -53,15 +53,9 @@ export const Analytics = ({
   const renderAnalytics = () => {
     switch (menuOption) {
       case "summary":
-        return <AnalyticsSummary influencer={influencer} data={summary} />;
+        return <AnalyticsSummary data={summary} />;
       case "youtube":
-        return (
-          <AnalyticsYoutube
-            influencer={influencer}
-            data={youtubeData}
-            error={youtubeError}
-          />
-        );
+        return <AnalyticsYoutube data={youtubeData} error={youtubeError} />;
       case "instagram":
         return (
           <AnalyticsInstagram

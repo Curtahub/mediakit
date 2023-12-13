@@ -59,7 +59,7 @@ export const AgeRange = ({ demographyByAge }: { demographyByAge: any }) => {
 
   return (
     <div className="flex flex-1 flex-col bg-white dark:bg-[#1A1B1E] rounded-2xl p-[32px]">
-      <p className="text-[12px] font-medium uppercase text-[#F80000] dark:text-[#B8B8B8]">
+      <p className="text-[12px] font-medium uppercase text-[#CE2039] dark:text-[#B8B8B8]">
         Público alcançado
       </p>
       <p className="text-[16px] font-semibold uppercase">Faixa etária</p>

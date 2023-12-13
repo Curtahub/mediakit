@@ -3,7 +3,6 @@ import { TikTokIcon } from "@/app/icons/TikTokIcon";
 import { YoutubeIcon } from "@/app/icons/YoutubeIcon";
 import { abbreviateNumber } from "@/app/utils/utils";
 import { useTheme } from "next-themes";
-import Image from "next/image";
 
 export const Impressions = ({ data }: { data: any }) => {
   const { theme } = useTheme();
@@ -11,7 +10,7 @@ export const Impressions = ({ data }: { data: any }) => {
 
   return (
     <div className="flex flex-col md:flex-row gap-[24px]">
-      <div className="flex flex-1 flex-col p-[32px] rounded-2xl bg-[#E52440] dark:bg-[#4F5157] gap-[14px]">
+      <div className="flex flex-1 flex-col p-[32px] rounded-2xl bg-[#CE2039] dark:bg-[#4E5157] gap-[14px]">
         <YoutubeIcon color={iconColor} width={24} height={24} />
         <div className="flex flex-row gap-[24px]">
           <div className="flex flex-col">
@@ -32,7 +31,7 @@ export const Impressions = ({ data }: { data: any }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-1 flex-col p-[32px] rounded-2xl bg-[#E52440] dark:bg-[#4F5157] gap-[14px]">
+      <div className="flex flex-1 flex-col p-[32px] rounded-2xl bg-[#CE2039] dark:bg-[#4E5157] gap-[14px]">
         <InstagramIcon color={iconColor} width={24} height={24} />
         <div className="flex flex-row gap-[24px]">
           <div className="flex flex-col">
@@ -53,7 +52,7 @@ export const Impressions = ({ data }: { data: any }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-1 flex-col p-[32px] rounded-2xl bg-[#E52440] dark:bg-[#4F5157] gap-[14px]">
+      <div className="flex flex-1 flex-col p-[32px] rounded-2xl bg-[#CE2039] dark:bg-[#4E5157] gap-[14px]">
         <TikTokIcon color={iconColor} width={24} height={24} />
         <div className="flex flex-row gap-[24px]">
           <div className="flex flex-col">

@@ -59,7 +59,7 @@ export const ER = ({ data }: { data: any }) => {
 
   return (
     <div className="flex flex-1 flex-col bg-white dark:bg-[#1A1B1E] rounded-2xl p-[32px]">
-      <p className="text-[12px] font-medium uppercase text-[#F80000]">Total</p>
+      <p className="text-[12px] font-medium uppercase text-[#CE2039]">Total</p>
       <p className="text-[16px] font-semibold uppercase">Engajamento</p>
       <div className="flex flex-1 items-center mt-[32px]">
         <Line options={options} data={graphData} />

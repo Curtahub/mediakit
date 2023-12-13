@@ -11,7 +11,6 @@ import { InstagramIcon } from "@/app/icons/InstagramIcon";
 import { YoutubeIcon } from "@/app/icons/YoutubeIcon";
 import { TikTokIcon } from "@/app/icons/TikTokIcon";
 import { differenceInYears, parse } from "date-fns";
-import ImageWithFallback from "@/app/components/ImageWithFallback/ImageWithFallback";
 
 type ProfileProps = {
   influencer: Influencer;
@@ -19,7 +18,7 @@ type ProfileProps = {
 
 export const Profile = ({ influencer }: ProfileProps) => {
   const { theme } = useTheme();
-  const iconColor = theme === "dark" ? "white" : undefined;
+  const iconColor = theme === "dark" ? "white" : "#101010";
 
   const calculateAge = (dob: string): number => {
     const date = parse(dob, "dd/MM/yyyy", new Date());

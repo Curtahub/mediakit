@@ -53,14 +53,14 @@ export const TotalPosts = () => {
       {
         label: "Valor (%)",
         data: labels.map(() => 100),
-        backgroundColor: "#ED243A",
+        backgroundColor: "#CE2039",
       },
     ],
   };
 
   return (
     <div className="flex flex-1 flex-col bg-white dark:bg-[#1A1B1E] rounded-2xl p-[32px]">
-      <p className="text-[12px] font-medium uppercase text-[#F80000]">Mídia</p>
+      <p className="text-[12px] font-medium uppercase text-[#CE2039]">Mídia</p>
       <p className="text-[16px] font-semibold uppercase">Posts totais</p>
       <div className="flex flex-1 items-center mt-[32px]">
         <Bar options={options} data={data} />
