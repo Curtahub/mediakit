@@ -1,8 +1,952 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-html,
-body {
-  height: 100%;
+.home-influencers,
+.home-influencers * {
+  box-sizing: border-box;
+}
+.home-influencers {
+  background: #1e1f21;
+  width: 2000px;
+  height: 1700px;
+  position: relative;
+  overflow: hidden;
+}
+.group-16 {
+  position: absolute;
+  inset: 0;
+}
+.group-13 {
+  width: 1296px;
+  height: 1205px;
+  position: static;
+}
+.group-20 {
+  width: 1296px;
+  height: 1205px;
+  position: static;
+}
+.frame-184 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 1205px;
+  position: absolute;
+  left: 72px;
+  top: 140px;
+}
+.frame-17 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1296px;
+  position: relative;
+}
+.frame-13 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.9px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.29px;
+  height: 200.73px;
+  position: relative;
+}
+.ellipse-78 {
+  background: linear-gradient(to left, #ce2039, #ce2039);
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 120.44px;
+  height: 120.44px;
+  position: relative;
+}
+.frame-183 {
+  background: #424242;
+  border-radius: 3.86px;
+  padding: 7.72px;
+  display: flex;
+  flex-direction: row;
+  gap: 7.72px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.rea-secreta {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-14 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.9px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.29px;
+  height: 200.73px;
+  position: relative;
+}
+.athos {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-15 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.9px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.29px;
+  height: 200.73px;
+  position: relative;
+}
+.balian {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-16 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.9px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.29px;
+  height: 200.73px;
+  position: relative;
+}
+.bauers {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-172 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.9px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.29px;
+  height: 200.73px;
+  position: relative;
+}
+.beto-gamer {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-18 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.9px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.29px;
+  height: 200.73px;
+  position: relative;
+}
+.bit-fut {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-19 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.9px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.29px;
+  height: 200.73px;
+  position: absolute;
+  left: 1111.71px;
+  top: 0px;
+}
+.bitgamer {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-182 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1296px;
+  position: relative;
+}
+.blant-a-husky {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cadres {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caduxinn {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.canal-90 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cherryrar {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.curta-hub {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.duda-berud {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-192 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1296px;
+  position: relative;
+}
+.fam-lia-arqueira {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.felca {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feuripe {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gabriel-kim {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gabzuski {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gamer-costa {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.geleia {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.94789695739746px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-20 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1295px;
+  position: relative;
+}
+.frame-132 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.89px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.14px;
+  height: 200.57px;
+  position: relative;
+}
+.ellipse-782 {
+  background: linear-gradient(to left, #ce2039, #ce2039);
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 120.34px;
+  height: 120.34px;
+  position: relative;
+}
+.frame-1832 {
+  background: #424242;
+  border-radius: 3.86px;
+  padding: 7.71px;
+  display: flex;
+  flex-direction: row;
+  gap: 7.71px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.gelli-clash {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-142 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.89px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.14px;
+  height: 200.57px;
+  position: relative;
+}
+.gudan-o-husky {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-152 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.89px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.14px;
+  height: 200.57px;
+  position: relative;
+}
+.inemafoo {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-162 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.89px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.14px;
+  height: 200.57px;
+  position: relative;
+}
+.jazz-ghost {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-173 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.89px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.14px;
+  height: 200.57px;
+  position: relative;
+}
+.ligonz {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-185 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.89px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.14px;
+  height: 200.57px;
+  position: relative;
+}
+.lip-o-gamer {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-193 {
+  display: flex;
+  flex-direction: column;
+  gap: 13.89px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 185.14px;
+  height: 200.57px;
+  position: absolute;
+  left: 1110.86px;
+  top: 0px;
+}
+.lopers {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-21 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1295px;
+  position: relative;
+}
+.luan-clash-war {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lucas-clash-on {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maicon-k-ster {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maneirando {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.manteiga {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.marcelodrv {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.max-palaro {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-22 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1295px;
+  position: absolute;
+  left: calc(50% - 648px);
+  top: 803px;
+}
+.mendrake {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.natan-por-a {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.night-extreme {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.orochinho {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.problems {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.robin-hood {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seijinho {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-23 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1295px;
+  position: absolute;
+  left: calc(50% - 648px);
+  top: 1004px;
+}
+.skorpion {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.suavemente-com {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tonigon {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zanq {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 19.93251609802246px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-vermelho {
+  background: #ce2039;
+  padding: 18px 40px 18px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 731px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1440px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.frame-111 {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.logo {
+  flex-shrink: 0;
+  width: 93px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.menu-prim-rio {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.menu-principal {
+  border-radius: 48px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-144 {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.group-4 {
+  flex-shrink: 0;
+  width: 76px;
+  height: 18px;
+  position: static;
+}
+.frame-148 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.home {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  overflow: visible;
+}
+.home2 {
+  color: var(--curta-02, #ffffff);
+  text-align: left;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 32px;
+  top: 4px;
+}
+.group-42 {
+  flex-shrink: 0;
+  width: 112px;
+  height: 18px;
+  position: static;
+}
+.favorite {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  overflow: visible;
+}
+.group-43 {
+  flex-shrink: 0;
+  width: 154px;
+  height: 18px;
+  position: static;
+}
+.curta {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  overflow: visible;
+}
+.chevron-down {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  overflow: visible;
+}
+.group-44 {
+  flex-shrink: 0;
+  width: 157px;
+  height: 18px;
+  position: static;
+}
+.email {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  overflow: visible;
 }
